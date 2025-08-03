@@ -94,7 +94,7 @@ class Ticket(models.Model):
     ) -> None:
         for count, max_count, attr_name in [
             (row, max_rows, "row"),
-            (seat, max_seats, "seats"),
+            (seat, max_seats, "seat"),
         ]:
             if not (1 <= count <= max_count):
                 print(max_seats)

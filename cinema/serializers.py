@@ -115,6 +115,7 @@ class TicketSerializer(serializers.ModelSerializer):
             max_seats=attrs["movie_session"].cinema_hall.seats_in_row,
             error_message=serializers.ValidationError
         )
+        return attrs
 
 
 class TicketListSerializer(TicketSerializer):
