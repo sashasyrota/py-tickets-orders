@@ -97,7 +97,6 @@ class Ticket(models.Model):
             (seat, max_seats, "seat"),
         ]:
             if not (1 <= count <= max_count):
-                print(max_seats)
                 raise error_message(
                     {
                         f"Error with {attr_name}": f"{attr_name} "
